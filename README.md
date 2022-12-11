@@ -31,7 +31,7 @@ Praktikum Probabilitas dan Statistik 2
 
 > c. Tentukanlah apakah terdapat pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas 𝐴 jika diketahui tingkat signifikansi 𝛼 = 5% serta H0 : “tidak ada pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas 𝐴”
 
-## Soal No. 2
+## Soal No. 2 Hipotesa 1 Sampel
 > Diketahui bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun. Untuk menguji klaim ini, 100 pemilik mobil yang dipilih secara acak diminta untuk mencatat jarak yang mereka tempuh. Jika sampel acak menunjukkan rata-rata 23.500 kilometer dan standar deviasi 3900 kilometer. (Kerjakan menggunakan 2 library seperti referensi pada modul).
 
 > a. Apakah Anda setuju dengan klaim tersebut?
@@ -41,7 +41,7 @@ Praktikum Probabilitas dan Statistik 2
 > c. Buatlah kesimpulan berdasarkan P-Value yang dihasilkan!
 
 
-## Soal No. 3
+## Soal No. 3 Hipotesa 2 Sampel
 > Diketahui perusahaan memiliki seorang data analyst ingin memecahkan permasalahan pengambilan keputusan dalam perusahaan tersebut. Selanjutnya didapatkanlah data berikut dari perusahaan saham tersebut.
 
 | Nama Kota/Atribut        | Bandung  | Bali  |
@@ -64,7 +64,7 @@ Praktikum Probabilitas dan Statistik 2
 
 > f. Kesimpulan(3)
 
-## Soal No. 4
+## Soal No. 4 Anova 1 Arah
 > Seorang Peneliti sedang meneliti spesies dari kucing di ITS . Dalam penelitiannya ia mengumpulkan data  tiga spesies kucing yaitu kucing oren, kucing hitam dan kucing putih dengan panjangnya masing-masing. 
 Jika : diketahui dataset  https://intip.in/datasetprobstat1 
 H0 : Tidak ada perbedaan panjang antara ketiga spesies atau rata-rata panjangnya sama    
@@ -82,7 +82,7 @@ Maka Kerjakan atau Carilah:
 
 > f. Visualisasikan data dengan ggplot2
 
-## Soal No. 5
+## Soal No. 5 Anova 2 Arah
 > Data yang digunakan merupakan hasil eksperimen yang dilakukan untuk mengetahui pengaruh suhu operasi (100˚C, 125˚C dan 150˚C) dan tiga jenis kaca pelat muka (A, B dan C) pada keluaran cahaya tabung osiloskop. Percobaan dilakukan sebanyak 27 kali dan didapat data sebagai berikut: Data Hasil Eksperimen. Dengan data tersebut: 
 
 > a. Buatlah plot sederhana untuk visualisasi data 
