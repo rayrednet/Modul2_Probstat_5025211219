@@ -56,13 +56,13 @@ Praktikum Probabilitas dan Statistik 2
 
 > b. Hitung Sampel Statistik(3)
 
-> c. Lakukan uji statistik (df =2)
+> c. Lakukan uji statistik (df = 2) (5)
 
-> d. Nilai Kritikal
+> d. Nilai Kritikal (3)
 
-> e. Keputusan
+> e. Keputusan(3)
 
-> f. Kesimpulan
+> f. Kesimpulan(3)
 
 ## Soal No. 4
 > Seorang Peneliti sedang meneliti spesies dari kucing di ITS . Dalam penelitiannya ia mengumpulkan data  tiga spesies kucing yaitu kucing oren, kucing hitam dan kucing putih dengan panjangnya masing-masing. 
