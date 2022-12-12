@@ -33,6 +33,18 @@ y <- c(100,95,70,90,90,90,89,90,100)
 
 > a. Carilah Standar Deviasi dari data selisih pasangan pengamatan tabel diatas
 
+Untuk mencari standar deviasi dari data selisih pasangan kita harus mencari `selisih antar data` yang memiliki indeks yang sama. Selanjutnya dicari `rata-rata` dari selisih sebagai standar deviasinya
+
+```Ruby
+sd(x-y)
+``
+
+Hasil dokumentasi:
+
+<img width="176" alt="image" src="https://user-images.githubusercontent.com/89933907/207131770-7d375d2b-e92f-461a-826a-25354f3a2a04.png">
+
+Maka standar deviasi dari data selisih pasangan pengamatan tabel di atas adalah `6.359595`
+
 > b. Carilah nilai t (p-value).
 
 > c. Tentukanlah apakah terdapat pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas 𝐴 jika diketahui tingkat signifikansi 𝛼 = 5% serta H0 : “tidak ada pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas 𝐴”
