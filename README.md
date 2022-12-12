@@ -25,6 +25,12 @@ Praktikum Probabilitas dan Statistik 2
 
 > Berdasarkan data pada tabel diatas, diketahui kadar saturasi oksigen  dari responden ke-3 ketika belum melakukan aktivitas 𝐴 sebanyak 67, dan setelah melakukan aktivitas 𝐴 sebanyak 70.
 
+Langkah pertama yang harus dilakukan adalah `memasukkan data` dari 9 responden `sesuai dengan kelompoknya`
+```Ruby
+x <- c(78,75,67,77,70,72,78,74,77)
+y <- c(100,95,70,90,90,90,89,90,100)
+```
+
 > a. Carilah Standar Deviasi dari data selisih pasangan pengamatan tabel diatas
 
 > b. Carilah nilai t (p-value).
