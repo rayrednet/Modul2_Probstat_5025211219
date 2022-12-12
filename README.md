@@ -47,6 +47,17 @@ Maka standar deviasi dari data selisih pasangan pengamatan tabel di atas adalah 
 
 > b. Carilah nilai t (p-value).
 
+Untuk mencari nilai t kita dapat menggunakan bantuan fungsi `t.test()` sebagai berikut:
+```Ruby
+t.test(y, x, paired = TRUE)
+```
+
+Hasil dokementasi:
+
+<img width="269" alt="image" src="https://user-images.githubusercontent.com/89933907/207133520-fca382e2-9fe7-4ab8-9f83-66a3176527e0.png">
+
+Maka nilai t adalah `7.6525` dengan df `8` dan p-value sebesar `6.003e-05`
+
 > c. Tentukanlah apakah terdapat pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas 𝐴 jika diketahui tingkat signifikansi 𝛼 = 5% serta H0 : “tidak ada pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas 𝐴”
 
 ## Soal No. 2 Hipotesa 1 Sampel
