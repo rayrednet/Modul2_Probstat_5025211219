@@ -52,13 +52,15 @@ Untuk mencari nilai t kita dapat menggunakan bantuan fungsi `t.test()` sebagai b
 t.test(y, x, paired = TRUE)
 ```
 
-Hasil dokementasi:
+Hasil dokumentasi:
 
 <img width="269" alt="image" src="https://user-images.githubusercontent.com/89933907/207133520-fca382e2-9fe7-4ab8-9f83-66a3176527e0.png">
 
 Maka nilai t adalah `7.6525` dengan df `8` dan p-value sebesar `6.003e-05`
 
 > c. Tentukanlah apakah terdapat pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas 𝐴 jika diketahui tingkat signifikansi 𝛼 = 5% serta H0 : “tidak ada pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas 𝐴”
+
+Berdasarkan 1b diperoleh nilai probabilitas `6.003e-05` yang dimana nilai tersebut lebih kecil dibandingkan dengan tingkat signifikansi 𝛼 = 5% = 0.05 sehingga `H0 ditolak dan H1 diterima`. Jadi dapat disimpulkan bahwa terdapat pengaruh signifikan pada kadar saturasi oksigen sebelum dan sesudah melakukan aktivitas A pada 𝛼 = 5%.
 
 ## Soal No. 2 Hipotesa 1 Sampel
 > Diketahui bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun. Untuk menguji klaim ini, 100 pemilik mobil yang dipilih secara acak diminta untuk mencatat jarak yang mereka tempuh. Jika sampel acak menunjukkan rata-rata 23.500 kilometer dan standar deviasi 3900 kilometer. (Kerjakan menggunakan 2 library seperti referensi pada modul).
