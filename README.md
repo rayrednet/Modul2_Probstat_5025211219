@@ -67,7 +67,17 @@ Berdasarkan 1b diperoleh nilai probabilitas `6.003e-05` yang dimana nilai terseb
 
 > a. Apakah Anda setuju dengan klaim tersebut?
 
+Saya `setuju` dengan klaim tersebut sebab berdasarkan sampel acak rata-rata mobil dikemudikan 23.500 kilometer dan standar deviasi  39000 kilometer sehingga hal ini mendukung klaim yang mengatakan bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun. 
+
 > b. Jelaskan maksud dari output yang dihasilkan!
+
+Pada soal ini kita memerlukan library BDSA untuk mendapatkan maksud dari output yang dihasilkan
+
+```Ruby
+install.packages("BSDA")
+library(BSDA)
+```
+
 
 > c. Buatlah kesimpulan berdasarkan P-Value yang dihasilkan!
 
