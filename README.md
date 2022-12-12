@@ -37,7 +37,7 @@ Untuk mencari standar deviasi dari data selisih pasangan kita harus mencari `sel
 
 ```Ruby
 sd(x-y)
-``
+```
 
 Hasil dokumentasi:
 
