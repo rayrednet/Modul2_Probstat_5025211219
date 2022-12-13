@@ -392,10 +392,31 @@ Diperoleh hasil:
 
 > c. Tampilkan tabel dengan mean dan standar deviasi keluaran cahaya untuk setiap perlakuan (kombinasi kaca pelat muka dan suhu operasi)
 
+Kita gunakan fungsi `group_by()` dan `summarise()` agar memperoleh ringkasan data sesuai dengan mean dan standar deviasinya
+
+```Ruby
+data_summary <- group_by(GTL, Glass, Temp) %>%
+  summarise(mean = mean(Light), sd = sd(Light)) %>%
+  arrange(desc(mean))
+print(data_summary)
+```
+
+Diperoleh hasil:
+
+<img width="411" alt="image" src="https://user-images.githubusercontent.com/89933907/207388866-7260f5bb-9364-4c12-a829-5896b14f024e.png">
 
 
 > d. Lakukan uji Tukey
 
+Untuk melakukan uji Tukey kita gunakan bantuan fungsi `TukeyHSD()`
+
+```Ruby
+tukey <- TukeyHSD(anova)
+print(tukey)
+```
+Diperoleh hasil:
+
+<img width="250" alt="image" src="https://user-images.githubusercontent.com/89933907/207389403-7227f555-d412-4e78-8835-134276aae1f8.png">
 
 
 > e. Gunakan compact letter display untuk menunjukkan perbedaan signifikan antara uji Anova dan uji Tukey
