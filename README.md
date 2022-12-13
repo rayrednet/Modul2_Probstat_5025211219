@@ -190,9 +190,11 @@ Maka nilai kritikalnya adalah `5.991465`
 
 > e. Keputusan(3)
 
-
+Pada 3b diperoleh `p-value = 0.03024` yang lebih kecil daripada `𝛼 = 0.05`. Maka `H0 ditolak` dan `H1 diterima`
 
 > f. Kesimpulan(3)
+
+Dari hasil-hasil yang diperoleh dapat disimpulkan bahwa `terdapat perbedaan` antara `rata-rata saham` di `Bandung` dan rata-rata saham di `Bali` (rata-rata saham Bandung tidak sama dengan Bali)
 
 ## Soal No. 4 Anova 1 Arah
 > Seorang Peneliti sedang meneliti spesies dari kucing di ITS . Dalam penelitiannya ia mengumpulkan data  tiga spesies kucing yaitu kucing oren, kucing hitam dan kucing putih dengan panjangnya masing-masing. 
