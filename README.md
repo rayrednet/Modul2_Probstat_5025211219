@@ -328,13 +328,75 @@ Diperoleh hasil:
 ## Soal No. 5 Anova 2 Arah
 > Data yang digunakan merupakan hasil eksperimen yang dilakukan untuk mengetahui pengaruh suhu operasi (100˚C, 125˚C dan 150˚C) dan tiga jenis kaca pelat muka (A, B dan C) pada keluaran cahaya tabung osiloskop. Percobaan dilakukan sebanyak 27 kali dan didapat data sebagai berikut:[Data Hasil Eksperimen](https://drive.google.com/file/d/1aLUOdw_LVJq6VQrQEkuQhZ8FW43FemTJ/view). Dengan data tersebut: 
 
+Kita memerlukan library di bawah ini pada soal ini:
+
+```Ruby
+install.packages("multcompView")
+library(readr)
+library(ggplot2)
+library(multcompView)
+library(dplyr)
+```
+
+Kemudian kita masukkan data hasil eksperimen pada soal dengan fungsi `read_scv()` dan `head()`. Arahkan `direktori` file sesuai dengan direktori download kita.
+
+```Ruby
+GTL <- read.csv(file = "C:/Users/rayss/Downloads/GTL.csv")
+head(GTL)
+str(GTL)
+```
+
+Diperoleh hasil:
+
+<img width="264" alt="image" src="https://user-images.githubusercontent.com/89933907/207386291-bcf703b7-c10b-4f9f-b831-451d7cb5c10a.png">
+
 > a. Buatlah plot sederhana untuk visualisasi data 
+
+Untuk membuat plot gunakan fungsi `qplot()` untuk membuat visualisasi data
+
+```Ruby
+qplot(x = Temp, y = Light, geom = "point", data = GTL) + facet_grid(.~Glass, labeller = label_both)
+```
+
+Diperoleh hasil:
+
+![image](https://user-images.githubusercontent.com/89933907/207386692-aa986190-3dbf-4037-bd34-0d553b012eb0.png)
+
 
 > b. Lakukan uji ANOVA dua arah untuk 2 faktor
 
+Untuk membuat uji anova 2 arah kita harus membuat variable sebagai factor menggunakan fungsi `as.factor()`
+
+```Ruby
+GTL$Glass <- as.factor(GTL$Glass)
+GTL$Temp_Factor <- as.factor(GTL$Temp)
+str(GTL)
+```
+
+Diperoleh hasil:
+
+<img width="325" alt="image" src="https://user-images.githubusercontent.com/89933907/207387399-548895ec-0328-45dd-a223-6d9b1695b20b.png">
+
+
+Selanjutnya kita gunakan fungsi `summary(aov())` untuk melakukan analisis varians
+
+```Ruby
+anova <- aov(Light ~ Glass*Temp_Factor, data = GTL)
+summary(anova)
+```
+
+Diperoleh hasil:
+
+<img width="272" alt="image" src="https://user-images.githubusercontent.com/89933907/207387835-1f42272d-c079-4ebd-9253-1f30ee5580f2.png">
+
+
 > c. Tampilkan tabel dengan mean dan standar deviasi keluaran cahaya untuk setiap perlakuan (kombinasi kaca pelat muka dan suhu operasi)
 
+
+
 > d. Lakukan uji Tukey
+
+
 
 > e. Gunakan compact letter display untuk menunjukkan perbedaan signifikan antara uji Anova dan uji Tukey
 
