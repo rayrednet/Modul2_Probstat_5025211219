@@ -232,6 +232,36 @@ Group2 <- subset(oneWayAnova, Group == "Kucing Hitam")
 Group3 <- subset(oneWayAnova, Group == "Kucing Putih")
 ```
 
+Selanjutnya, gambar plot kuantil normal untuk melihat distribusi data dan outlier utama dalam masing-masing group. Gunakan bantuan fungsi `qnorm()` dan `qqline()`
+
+Group 1
+```Ruby
+qqnorm(Group1$Length)
+qqline(Group1$Length)
+```
+Diperoleh hasil:
+
+![image](https://user-images.githubusercontent.com/89933907/207376401-0b3e15d5-2a64-4763-91c9-d4decc0f5328.png)
+
+Group 2
+```Ruby
+qqnorm(Group2$Length)
+qqline(Group2$Length)
+```
+Diperoleh hasil:
+
+![image](https://user-images.githubusercontent.com/89933907/207376583-34852cee-7baf-49f7-924f-84563defa818.png)
+
+Group 3
+```Ruby
+qqnorm(Group3$Length)
+qqline(Group3$Length)
+```
+Diperoleh hasil:
+
+![image](https://user-images.githubusercontent.com/89933907/207376763-55b1ece0-fb2c-401e-8db3-b87a6b43c9c5.png)
+
+
 > b. carilah atau periksalah Homogeneity of variances nya , Berapa nilai p yang didapatkan? , Apa hipotesis dan kesimpulan yang dapat diambil ?
 
 > c. Untuk uji ANOVA (satu arah), buatlah model linier dengan panjang versus grup dan beri nama model tersebut model 1.
