@@ -146,7 +146,15 @@ n2 = 27
 tsum.test(xbar1, s1, n1, xbar2, s2, n2, alternative = "greater", var.equal = TRUE)
 ```
 
+Diperoleh hasil output:
+
+<img width="369" alt="image" src="https://user-images.githubusercontent.com/89933907/207359946-ac58496d-c7c2-464d-bcfc-f2dee0dfb68f.png">
+
+Maka diperoleh nilai `t = 1.9267`, `df = 44`, dan `p-value = 0.03024` dengan H1 benar karena nilai mean lebih besar dari 0.
+
 > c. Lakukan uji statistik (df = 2) (5)
+
+
 
 > d. Nilai Kritikal (3)
 
