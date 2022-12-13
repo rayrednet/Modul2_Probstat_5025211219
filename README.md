@@ -133,6 +133,19 @@ Klaim H1 rata-rata saham Bandung `tidak sama` dengan Bali
 
 > b. Hitung Sampel Statistik(3)
 
+Perhitungan sampel statistik dilakukan dengan bantuan fungsi `tsum.test()`
+
+```Ruby
+xbar1 = 3.64
+s1 = 1.67
+n1 = 19
+xbar2 = 2.79
+s2 = 1.32
+n2 = 27
+
+tsum.test(xbar1, s1, n1, xbar2, s2, n2, alternative = "greater", var.equal = TRUE)
+```
+
 > c. Lakukan uji statistik (df = 2) (5)
 
 > d. Nilai Kritikal (3)
