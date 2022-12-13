@@ -1,6 +1,9 @@
 # Modul2_Probstat_5025211219
 Praktikum Probabilitas dan Statistik 2
 
+## Notes
+Jika screenshot kurang jelas, klik image screenshot agar terlihat lebih jelas
+
 ## Identitas
 | Name           | NRP        | Kelas     |
 | ---            | ---        | ----------|
@@ -421,9 +424,29 @@ Diperoleh hasil:
 
 > e. Gunakan compact letter display untuk menunjukkan perbedaan signifikan antara uji Anova dan uji Tukey
 
+Compact letter display dibuat dengan bantuan fungsi `multcompLetterS4()`
+
+```Ruby
+tukey.cld <- multcompLetters4(anova, tukey)
+print(tukey.cld)
+```
+
+Diperoleh hasil:
+
+<img width="243" alt="image" src="https://user-images.githubusercontent.com/89933907/207390463-fb14fb8f-e227-4a42-a644-bff18743bad0.png">
 
 
+Kemudian kita tambahkan mean dan standar deviasi ke tabel compact letter display
 
+```Ruby
+cld <- as.data.frame.list(tukey.cld$`Glass:Temp_Factor`)
+data_summary$Tukey <- cld$Letters
+print(data_summary)
+```
+
+Diperoleh hasil:
+
+<img width="250" alt="image" src="https://user-images.githubusercontent.com/89933907/207390917-b56b9161-5c77-4284-8b15-7feea6624de4.png">
 
 
 
