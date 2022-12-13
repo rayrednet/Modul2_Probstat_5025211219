@@ -118,6 +118,19 @@ Dari hasil 2b diperoleh nilai `p-value < 2.2e-16` yang lebih kecil dari signific
 
 > a. H0 dan H1(3)
 
+Dari soal tersebut dapat dibuat klaim H0 dan H1 sebagai berikut:
+
+```Ruby
+H0 : µ1 = µ2 
+```
+Klaim H0 berarti rata-rata saham Bandung `sama` dengan Bali
+
+```Ruby
+H0 : µ1 ≠ µ2 
+```
+Klaim H1 rata-rata saham Bandung `tidak sama` dengan Bali
+
+
 > b. Hitung Sampel Statistik(3)
 
 > c. Lakukan uji statistik (df = 2) (5)
