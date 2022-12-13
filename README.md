@@ -315,8 +315,15 @@ Gunakan bantuan fungsi `ggplot()` untuk visualisasi data. Kita memerlukan librar
 install.packages("ggplot2")
 library("ggplot2")
 
-ggplot(dataset, aes(x = Group, y = Length)) + geom_boxplot(fill= "pink", color = c("#FFA500", "#000000", "#FFFFFF")) + scale_x_discrete() + xlab("Group") + ylab("Length (cm)")
+ggplot(oneWayAnova, aes(x = Group, y = Length)) +
+  geom_boxplot(fill = "white", color = c("#E7B800", "#000000", "#808080")) +
+  scale_x_discrete() + xlab("Group") + ylab("Length (cm)")
 ```
+
+Diperoleh hasil:
+
+![image](https://user-images.githubusercontent.com/89933907/207384304-6414d9a4-09d9-4bf8-81ba-bdacf77fa160.png)
+
 
 ## Soal No. 5 Anova 2 Arah
 > Data yang digunakan merupakan hasil eksperimen yang dilakukan untuk mengetahui pengaruh suhu operasi (100˚C, 125˚C dan 150˚C) dan tiga jenis kaca pelat muka (A, B dan C) pada keluaran cahaya tabung osiloskop. Percobaan dilakukan sebanyak 27 kali dan didapat data sebagai berikut: Data Hasil Eksperimen. Dengan data tersebut: 
