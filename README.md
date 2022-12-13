@@ -99,10 +99,11 @@ Hasil output:
 
 <img width="308" alt="image" src="https://user-images.githubusercontent.com/89933907/207354869-d5e1057a-2a2f-4e9b-bb1f-8419f8ada585.png">
 
-Dari hasil tersebut dapat disimpulkan rata-rata bahwa `h1 benar` karena mean lebih besar dari 20000, dengan 95% confidence interval rata-rata jarak mobil per tahunnya adalah `22.858,51`
+Dari hasil tersebut dapat disimpulkan rata-rata bahwa `H1 benar` karena mean lebih besar dari 20000, dengan 95% confidence interval rata-rata jarak mobil per tahunnya adalah `22.858,51` dengan `z = 8.9744` dan `p-value < 2.2 e-16`
 
 > c. Buatlah kesimpulan berdasarkan P-Value yang dihasilkan!
 
+Dari hasil 2b diperoleh nilai `p-value < 2.2e-16` yang lebih kecil dari significant level `𝛼 = 0.05`. Jadi dapat disimpulkan bahwa `H0 ditolak dan H1 diterima` dengan rata-rata jarak tempuh mobil lebih dari 20.000 km/tahun
 
 ## Soal No. 3 Hipotesa 2 Sampel
 > Diketahui perusahaan memiliki seorang data analyst ingin memecahkan permasalahan pengambilan keputusan dalam perusahaan tersebut. Selanjutnya didapatkanlah data berikut dari perusahaan saham tersebut.
