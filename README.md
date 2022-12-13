@@ -292,7 +292,20 @@ Diperoleh hasil:
 
 > d. Dari hasil poin C, berapakah nilai p? Apa yang dapat Anda simpulkan dari H0?
 
+Dari 4c diperoleh nilai `p-value = 0.0013` yang dimana nilainya lebih kecil dari 𝛼 = 0.05 dan `F-value = 7.0982`. Maka, `H0 ditolak` dan disimpulkan bahwa terdapat perbedaan panjang antara ketiga spesies  atau rata-rata panjangnya sama.
+
 > e. Verifikasilah jawaban model 1 dengan Post-hoc test Tukey HSD, dari nilai p yang didapatkan apakah satu jenis kucing lebih panjang dari yang lain? Jelaskan.
+
+Untuk melakukan verifikasi dengan Post-hoc test Tukey HSD untuk mengetahui perbandingan tiap spesies gunakan fungsi `TukeyHSD()`
+
+```Ruby
+TukeyHSD(aov(model1))
+```
+Diperoleh hasil:
+
+<img width="308" alt="image" src="https://user-images.githubusercontent.com/89933907/207380707-b2482b2e-7109-4d1f-a53a-4d877b5ec027.png">
+
+Dari hasil tersebut dapat dilihat p-value dari setiap group. Apabila `p-value < 0.05` maka panjang group akan `berbeda`, sementara jika `p-value >= 0.05` maka panjang group akan `sama`. Perbedaan panjang kucing yang signifikan adalah kucing hitam terhadap kucing oren dan kucing putih jika menggunakan 𝛼 = 5%.
 
 > f. Visualisasikan data dengan ggplot2
 
