@@ -154,6 +154,14 @@ Maka diperoleh nilai `t = 1.9267`, `df = 44`, dan `p-value = 0.03024` dengan H1 
 
 > c. Lakukan uji statistik (df = 2) (5)
 
+Untuk melakukan uji statistik gunakan fungsi `plotDist()` sebagai visualisasi uji statistik dengan `df = 2`
+
+```Ruby
+df = 2
+plotDist(dist = 't', df, col = "blue")
+```
+Diperoleh hasil sebagai berikut:
+
 
 
 > d. Nilai Kritikal (3)
