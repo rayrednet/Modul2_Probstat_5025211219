@@ -65,7 +65,7 @@ Berdasarkan 1b diperoleh nilai probabilitas `6.003e-05` yang dimana nilai terseb
 ## Soal No. 2 Hipotesa 1 Sampel
 > Diketahui bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun. Untuk menguji klaim ini, 100 pemilik mobil yang dipilih secara acak diminta untuk mencatat jarak yang mereka tempuh. Jika sampel acak menunjukkan rata-rata 23.500 kilometer dan standar deviasi 3900 kilometer. (Kerjakan menggunakan 2 library seperti referensi pada modul).
 
-Dari soal tersebut dapat dibuat H0 dan H1 sebagai berikut:
+Dari soal tersebut dapat dibuat klaim H0 dan H1 sebagai berikut:
 
  ```Ruby
 H0 : µ ≤ 20.000 km
@@ -94,6 +94,12 @@ n = 100
 mu = 20000
 zsum.test(xbar, sd, n, alternative = "greater", mu = 20000)
 ```
+
+Hasil output:
+
+<img width="308" alt="image" src="https://user-images.githubusercontent.com/89933907/207354869-d5e1057a-2a2f-4e9b-bb1f-8419f8ada585.png">
+
+Dari hasil tersebut dapat disimpulkan rata-rata bahwa `h1 benar` karena mean lebih besar dari 20000, dengan 95% confidence interval rata-rata jarak mobil per tahunnya adalah `22.858,51`
 
 > c. Buatlah kesimpulan berdasarkan P-Value yang dihasilkan!
 
