@@ -278,6 +278,16 @@ Jadi nilai `p-value adalah 0.8054` yang dimana lebih besar dari 𝛼 = 0.05 sehi
 
 > c. Untuk uji ANOVA (satu arah), buatlah model linier dengan panjang versus grup dan beri nama model tersebut model 1.
 
+Pada soal ini kita buat variable `model1` yang berisi fungsi `lm()` kemudian kita masukkan variable `model1` ke dalam fungsi `anova()` untuk membuat model linear dan melakukan uji anova
+
+```Ruby
+model1 = lm(Length~Group, data = oneWayAnova)
+anova(model1)
+```
+
+Diperoleh hasil:
+
+<img width="285" alt="image" src="https://user-images.githubusercontent.com/89933907/207379262-bc85325e-6930-484b-9db0-df1a5a6bea6b.png">
 
 
 > d. Dari hasil poin C, berapakah nilai p? Apa yang dapat Anda simpulkan dari H0?
