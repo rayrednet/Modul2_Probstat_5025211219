@@ -123,12 +123,12 @@ Dari soal tersebut dapat dibuat klaim H0 dan H1 sebagai berikut:
 ```Ruby
 H0 : µ1 = µ2 
 ```
-Klaim H0 berarti rata-rata saham Bandung `sama` dengan Bali
+Klaim `H0` berarti rata-rata saham Bandung `sama` dengan Bali
 
 ```Ruby
 H0 : µ1 ≠ µ2 
 ```
-Klaim H1 rata-rata saham Bandung `tidak sama` dengan Bali
+Klaim `H1` rata-rata saham Bandung `tidak sama` dengan Bali
 
 
 > b. Hitung Sampel Statistik(3)
@@ -154,14 +154,23 @@ Maka diperoleh nilai `t = 1.9267`, `df = 44`, dan `p-value = 0.03024` dengan H1 
 
 > c. Lakukan uji statistik (df = 2) (5)
 
+Kita memerlukan package `library(mosaic)` untuk melakukan uji statistik ini
+
+```Ruby
+install.packages("mosaic")
+library(mosaic)
+```
+
 Untuk melakukan uji statistik gunakan fungsi `plotDist()` sebagai visualisasi uji statistik dengan `df = 2`
 
 ```Ruby
 df = 2
 plotDist(dist = 't', df, col = "blue")
 ```
+
 Diperoleh hasil sebagai berikut:
 
+![image](https://user-images.githubusercontent.com/89933907/207362804-f354acd7-2c85-4254-a0d8-fbff546c4acc.png)
 
 
 > d. Nilai Kritikal (3)
