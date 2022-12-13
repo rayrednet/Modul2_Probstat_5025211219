@@ -65,6 +65,13 @@ Berdasarkan 1b diperoleh nilai probabilitas `6.003e-05` yang dimana nilai terseb
 ## Soal No. 2 Hipotesa 1 Sampel
 > Diketahui bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun. Untuk menguji klaim ini, 100 pemilik mobil yang dipilih secara acak diminta untuk mencatat jarak yang mereka tempuh. Jika sampel acak menunjukkan rata-rata 23.500 kilometer dan standar deviasi 3900 kilometer. (Kerjakan menggunakan 2 library seperti referensi pada modul).
 
+Dari soal tersebut dapat dibuat H0 dan H1 sebagai berikut:
+
+ ```Ruby
+H0 : µ ≤ 20.000 km
+H1 : µ > 20.000 km
+```
+
 > a. Apakah Anda setuju dengan klaim tersebut?
 
 Saya `setuju` dengan klaim tersebut sebab berdasarkan sampel acak rata-rata mobil dikemudikan 23.500 kilometer dan standar deviasi  39000 kilometer sehingga hal ini mendukung klaim yang mengatakan bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun. 
@@ -78,6 +85,15 @@ install.packages("BSDA")
 library(BSDA)
 ```
 
+Kemudian kita hitung menggunakan uji Z satu sample sebab n > 30. Uji z ini dapat digunakan dengan fungsi `zsum.test()` 
+
+```Ruby
+xbar = 23500
+sd = 3900
+n = 100
+mu = 20000
+zsum.test(xbar, sd, n, alternative = "greater", mu = 20000)
+```
 
 > c. Buatlah kesimpulan berdasarkan P-Value yang dihasilkan!
 
