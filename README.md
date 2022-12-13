@@ -204,6 +204,34 @@ Maka Kerjakan atau Carilah:
 
 > a. Buatlah masing masing jenis spesies menjadi  3 subjek "Grup" (grup 1,grup 2,grup 3). Lalu Gambarkan plot kuantil normal untuk setiap kelompok dan lihat apakah ada outlier utama dalam homogenitas varians.
 
+Kita gunakan bantuan fungsi `read.table()` untuk memasukan dataset yang diberikan
+
+Kita harus mengarahkan `direktori file` hasil download tersebut ke dalam R Studio
+
+```Ruby
+oneWayAnova = read.table(file = "C:/Users/rayss/Downloads/onewayanova.txt", header = TRUE) 
+attach(oneWayAnova)
+names(oneWayAnova)
+```
+
+Diperoleh output:
+
+<img width="388" alt="image" src="https://user-images.githubusercontent.com/89933907/207374408-49fc84c5-d261-4c8e-b01a-a4c37b624a4d.png">
+
+
+Kemudian untuk membagi kelompok menjadi `3 bagian` (Group 1 adalah kucing oren, Group 2 adalah kucing hitam, dan Group 3 adalah kucing putih), kita gunakan `factor` untuk membuat group dan memberikan label setiap group sebab data berdistribusi normal dan tidak ditemukan outlier utama.
+
+```Ruby
+oneWayAnova$Group <- as.factor(oneWayAnova$Group)
+oneWayAnova$Group = factor(oneWayAnova$Group, labels = c("Kucing Oren", "Kucing Hitam", "Kucing Putih"))
+
+class(oneWayAnova$Group)
+
+Group1 <- subset(oneWayAnova, Group == "Kucing Oren")
+Group2 <- subset(oneWayAnova, Group == "Kucing Hitam")
+Group3 <- subset(oneWayAnova, Group == "Kucing Putih")
+```
+
 > b. carilah atau periksalah Homogeneity of variances nya , Berapa nilai p yang didapatkan? , Apa hipotesis dan kesimpulan yang dapat diambil ?
 
 > c. Untuk uji ANOVA (satu arah), buatlah model linier dengan panjang versus grup dan beri nama model tersebut model 1.
