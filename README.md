@@ -264,7 +264,21 @@ Diperoleh hasil:
 
 > b. carilah atau periksalah Homogeneity of variances nya , Berapa nilai p yang didapatkan? , Apa hipotesis dan kesimpulan yang dapat diambil ?
 
+Untuk menghitung homogenity of variances gunakan fungsi `bartlett.test()` pada dataset soal
+
+```Ruby
+bartlett.test(Length~Group, data = oneWayAnova)
+```
+
+Diperoleh hasil:
+
+<img width="249" alt="image" src="https://user-images.githubusercontent.com/89933907/207377835-76aba62e-67d0-4414-9cd3-97c338fc3031.png">
+
+Jadi nilai `p-value adalah 0.8054` yang dimana lebih besar dari 𝛼 = 0.05 sehingga membuktikan bahwa variance sama.
+
 > c. Untuk uji ANOVA (satu arah), buatlah model linier dengan panjang versus grup dan beri nama model tersebut model 1.
+
+
 
 > d. Dari hasil poin C, berapakah nilai p? Apa yang dapat Anda simpulkan dari H0?
 
