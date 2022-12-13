@@ -175,7 +175,22 @@ Diperoleh hasil sebagai berikut:
 
 > d. Nilai Kritikal (3)
 
+Nilai kritikal dihitung dengan menggunakan fungsi `qchisq()` dengan `df = 2`
+
+```Ruby
+df = 2
+qchisq(p = 0.05, df, lower.tail = FALSE)
+```
+
+Diperoleh hasil output:
+
+<img width="216" alt="image" src="https://user-images.githubusercontent.com/89933907/207363624-acdedabf-b82a-4dea-82cf-37743ce22cfb.png">
+
+Maka nilai kritikalnya adalah `5.991465`
+
 > e. Keputusan(3)
+
+
 
 > f. Kesimpulan(3)
 
